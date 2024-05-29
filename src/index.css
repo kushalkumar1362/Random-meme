@@ -4,25 +4,60 @@
 
 /* css background-image generated using https://10015.io/tools/css-background-pattern-generator */
 .background {
-  background-image: radial-gradient(#ffffff 2.5px, transparent 2.5px), radial-gradient(#ffffff 2.5px, transparent 2.5px);
-  background-size: 36px 36px;
-  background-position: 0 0, 18px 18px;
-  background-color: #b1d2ff;
+    background-image: radial-gradient(#ffffff 2.5px, transparent 2.5px),
+        radial-gradient(#ffffff 2.5px, transparent 2.5px);
+    background-size: 36px 36px;
+    background-position: 0 0, 18px 18px;
+    background-color: #b1d2ff;
+    height: fit-content;
 }
 
-
-/* css loader generated using https://10015.io/tools/css-loader-generator */
 .spinner {
-   margin: 40px;
-   width: 11.2px;
-   height: 11.2px;
-   animation: spinner-z355kx 1s infinite linear;
-   border-radius: 11.2px;
-   box-shadow: 28px 0px 0 0 #fff, 17.4px 21.8px 0 0 #fff, -6.2px 27.2px 0 0 #fff, -25.2px 12px 0 0 #fff, -25.2px -12px 0 0 #fff, -6.2px -27.2px 0 0 #fff, 17.4px -21.8px 0 0 #fff;
+   position: relative;
+   width: 15.7px;
+   height: 15.7px;
 }
 
-@keyframes spinner-z355kx {
-   to {
-      transform: rotate(360deg);
+.spinner div {
+   animation: spinner-4t3wzl 1.875s infinite backwards;
+   background-color: #474bff;
+   border-radius: 50%;
+   height: 100%;
+   position: absolute;
+   width: 100%;
+}
+
+.spinner div:nth-child(1) {
+   animation-delay: 0.15s;
+   background-color: rgba(71,75,255,0.9);
+}
+
+.spinner div:nth-child(2) {
+   animation-delay: 0.3s;
+   background-color: rgba(71,75,255,0.8);
+}
+
+.spinner div:nth-child(3) {
+   animation-delay: 0.45s;
+   background-color: rgba(71,75,255,0.7);
+}
+
+.spinner div:nth-child(4) {
+   animation-delay: 0.6s;
+   background-color: rgba(71,75,255,0.6);
+}
+
+.spinner div:nth-child(5) {
+   animation-delay: 0.75s;
+   background-color: rgba(71,75,255,0.5);
+}
+
+@keyframes spinner-4t3wzl {
+   0% {
+      transform: rotate(0deg) translateY(-200%);
+   }
+
+   60%, 100% {
+      transform: rotate(360deg) translateY(-200%);
    }
 }
